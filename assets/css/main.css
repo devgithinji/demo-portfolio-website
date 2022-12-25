@@ -1,0 +1,123 @@
+/*-----------------------------------*\
+  #main.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 codewithsadee
+ */
+
+/**
+ * TABLE OF CONTENT
+ *
+ * COMPONENTS
+ * Btn............................Buttons style
+ * Slider.........................Slider style
+ * Card...........................Cards style
+ *
+ * MAIN CONTENT
+ * Header.........................Modify header style
+ * Hero...........................Hero styles
+ * Client.........................Client style
+ * About..........................About style
+ * Skills.........................Skills style
+ * Cta............................Cta style
+ * Testimonials...................Testimonials style
+ * Media queries..................Responsive for all devices
+ */
+
+/*-----------------------------------*\
+  #COMPONENTS
+\*-----------------------------------*/
+@import url("./components/btn.css");
+
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+.header {
+    background-color: transparent;
+}
+
+.header.active {
+    background-color: var(--white);
+}
+
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+.hero {
+    position: relative;
+    background-color: var(--maximum-yellow-red_a10);
+    padding-block-start: calc(var(--section-padding) + 60px);
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10%;
+    bottom: 70%;
+    right: -75px;
+    background-color: var(--maximum-yellow-red_a40);
+    transform: rotate(-45deg);
+    border-radius: var(--radius-50);
+    z-index: -1;
+}
+
+.hero .container {
+    display: grid;
+    gap: 70px;
+}
+
+.hero-subtitle {
+    color: var(--jet);
+    text-transform: uppercase;
+    font-weight: var(--fw-600);
+    letter-spacing: 3px;
+    margin-block-end: 20px;
+}
+
+.hero-text {
+    margin-block: 25px;
+}
+
+.hero .btn {
+    margin-inline: auto;
+}
+
+.hero-banner {
+    max-width: max-content;
+    margin-inline: auto;
+}
+
+
+/*-----------------------------------*\
+  #CLIENT
+\*-----------------------------------*/
+
+
+/*-----------------------------------*\
+  #ABOUT
+\*-----------------------------------*/
+
+
+/*-----------------------------------*\
+  #SKILLS
+\*-----------------------------------*/
+
+
+/*-----------------------------------*\
+  #CTA
+\*-----------------------------------*/
+
+
+/*-----------------------------------*\
+  #TESTIMONIALS
+\*-----------------------------------*/
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
