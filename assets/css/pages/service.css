@@ -52,3 +52,8 @@
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+@media (min-width: 768px) {
+
+    .service-list { grid-template-columns: 1fr 1fr; }
+
+}

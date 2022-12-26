@@ -262,3 +262,136 @@
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+/**
+ * responsive for large than 575px screen
+ */
+
+@media (min-width: 575px) {
+
+    /**
+     * CLIENT, ABOUT & SKILL
+     */
+
+    .client .slider-item { min-width: calc(33.33% - 20px); }
+
+    .client .slider-item .w-100,
+    .about-banner,
+    .skill-banner {
+        max-width: max-content;
+        margin-inline: auto;
+    }
+
+
+
+    /**
+     * CTA
+     */
+
+    .cta .container { justify-content: space-between; }
+
+}
+
+
+
+
+
+/**
+ * responsive for large than 768px screen
+ */
+
+@media (min-width: 768px) {
+
+    /**
+     * HERO
+     */
+
+    .hero-text { --fs-18: 2rem; }
+
+    .hero::after {
+        top: -20%;
+        bottom: 50%;
+        left: 48%;
+        right: -15%;
+    }
+
+
+
+    /**
+     * CLIENT
+     */
+
+    .client .slider-item { min-width: calc(25% - 22.5px); }
+
+
+
+    /**
+     * TESTIMONIALS
+     */
+
+    .testi .slider-item { min-width: calc(50% - 15px); }
+
+}
+
+
+
+
+
+/**
+ * responsive for large than 992px screen
+ */
+
+@media (min-width: 992px) {
+
+    /**
+     * HERO, ABOUT, SKILL
+     */
+
+    :is(.hero, .about, .skill) .container {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+
+
+    /**
+     * HERO
+     */
+
+    .hero { text-align: left; }
+
+    .hero .btn { margin-inline: 0; }
+
+
+
+    /**
+     * CLIENT
+     */
+
+    .client .slider-item { min-width: calc(20% - 24px); }
+
+
+
+    /**
+     * SKILL
+     */
+
+    .skill .container { align-items: flex-start; }
+
+}
+
+
+
+/**
+ * responsive for large than 1200px screen
+ */
+
+@media (min-width: 1200px) {
+
+    /**
+     * ABOUT
+     */
+
+    .about-list { gap: 40px; }
+
+}
+
