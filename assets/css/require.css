@@ -148,7 +148,6 @@ body {
     line-height: 1.5;
     font-size: 1.6rem;
     overflow: hidden;
-    height: 300vh;
 }
 
 body.loaded {
@@ -274,6 +273,18 @@ body.loaded {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.has-bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-holder {
+    aspect-ratio: var(--width) / var(--height);
+    background-color: var(--light-gray);
+    overflow: hidden;
 }
 
 
@@ -421,7 +432,6 @@ body.loaded {
 }
 
 
-
 /*-----------------------------------*\
-  #MEDIA QUEREIS
+  #MEDIA QUERIES
 \*-----------------------------------*/
